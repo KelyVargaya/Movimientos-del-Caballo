@@ -3,26 +3,19 @@
 }
 body
 {
-background:url(ajedrez.jpg);
+    background:url(ajedrez.jpg);
 
 }
 
 h1{
-	font-size: 4s0px;
+	font-size: 40px;
 	text-align: center;
-}
-
-img{
-width:10px
-height: 15px;
-margin: 0px;
-padding: 0px;
 }
 
 table {  
 	color: #333; 
+	height: 600px;
 	width: 100%;
-	height: 700px;
 	border-collapse: collapse;
 	border: grey 2px solid;
 }
@@ -30,14 +23,17 @@ table {
 td { 
 	border: 1px solid transparent;
  	text-align: center; 
-  	width: 25px;
- 	height: 25px;
-
+  	width: 65px;
+ 	height: 65px;
 }
+
 button{
 	color: white;
 	background: black;
+}
 
+img{
+	width: 45px;
 }
 
 #parrafo{
@@ -48,11 +44,10 @@ button{
 }
 
 #contenido{
-  text-align: center;
-  float: left;
-  width: 100%;
-  height: 900px;
-  background: white;
+    text-align: center;
+    float: left;
+    width: 100%;
+    background: white;
   
 }
 
@@ -64,14 +59,14 @@ button{
     }
 
 .negro{
-  background-color: black;
-  color:white;
+    background-color: black;
+    color:white;
 }
 
 
 #tablero{
 	text-align: center;
-	padding: 0px 160px 0px 160px;
+	padding: 0px 180px 0px 180px;
 }
 
 #ejecutar{
@@ -93,10 +88,18 @@ button{
 }
 
 #lados{
-width: 40px; 
-height: 40px;
-text-align: center;
-font-size: 17px;
-color: black;
-border: black 3px solid;
+	width: 40px; 
+	height: 40px;
+	text-align: center;
+	font-size: 17px;
+	color: black;
+	border: black 3px solid;
+}
+
+#solucion{
+	width: 100px;
+	height: 100px;
+	background: url(boton.jpg);
+	position: absolute;
+	right: 150px
 }

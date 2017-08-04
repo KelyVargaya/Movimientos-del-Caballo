@@ -143,7 +143,7 @@ function generarTabla() {
             }
             celda.setAttribute('id', M[i][j]);
             var p = document.createElement('p');
-            p.setAttribute("class", "num");
+            p.setAttribute("class", "number");
             p.innerHTML = M[i][j];
             celda.appendChild(p);
 
@@ -156,7 +156,7 @@ function generarTabla() {
 
 generar.onclick = function () {
     generarTabla();
-    var n = document.getElementsByClassName("num");
+    var n = document.getElementsByClassName("number");
     for (var i = 0; i < n.length; i++) {
         n[i].innerText = "";
     }
@@ -166,26 +166,25 @@ solucion.onclick = function () {
     generarTabla();
 }
 
-
 siguiente.onclick = function () {
     var cont= document.createTextNode(contMove);
     var celdas = document.getElementsByTagName("td");
     var image= document.createElement("img");
-    //
-    image.setAttribute('src','http://www.tuditees.com/camisetas/ajedrez-caballo.png')
+    image.setAttribute('src','http://icdn.pro/images/es/s/p/springer-caballo-de-ajedrez-icono-9158-128.png')
+    //image.setAttribute("width","25px" );
     var n = parseInt(document.getElementById('lados').value);
     for (var j = 0; j < celdas.length; j++) {
         if (celdas[j].id == contMove) {
-           // celdas[j].appendChild(cont);
+           //celdas[j].appendChild(cont);
             celdas[j].appendChild(image);
 
         }
     }
     if (contMove > (n * n)) {
         generarTabla();
-        var num = document.getElementsByClassName("num");
-        for (var i = 0; i < num.length; i++) {
-            num[i].innerText = "";
+        var number = document.getElementsByClassName("number");
+        for (var i = 0; i < number.length; i++) {
+            number[i].innerText = "";
         }
         contMove = 0;
     }
